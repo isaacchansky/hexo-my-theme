@@ -1,11 +1,11 @@
 section
   nav#footer-menu
     ul
+    - site.pages.each(function(page){
       li
-        a(href=config.root + 'about') About
+        a(href= url_for(page.path) )= titlecase(page.title)
+    - })
       li
         a(href=config.root + 'archives') Archive
-      li
-        a(href='http://github.com/widatama/hexo-jade-barebone') Source
       li
         a(href=theme.rss ? theme.rss : config.root + 'atom.xml') Feed

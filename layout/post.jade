@@ -1,9 +1,8 @@
 extends base
 
 prepend window_title
-  
+
   = page.title
-  &mdash;
 
 append content
   article(class=page.layout)
@@ -14,7 +13,8 @@ append content
       +date(page.date)
 
       +category(page.categories)
-    
+
     != page.content
 
+  include _partial/comments
   include _partial/article_pagination
