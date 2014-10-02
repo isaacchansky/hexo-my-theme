@@ -1,28 +1,28 @@
-/* 
+/*
 
-	
+
 	|Globals
 
 */
 
-  #page-header{
+  .page-header{
     margin-bottom: 4.5em;
   }
 
-  #masthead{
+  .masthead{
     width: 60%;
     max-width: 54rem;
     margin: 3em 0 0 3rem;
     overflow: auto;
   }
 
-  #site-title{
+  .site-title{
     font-size: 1.5em;
     float: left;
-    margin-right: 1.5rem;    
+    margin-right: 1.5rem;
   }
 
-  #site-slogan{
+  .site-slogan{
     font-size: 0.75em;
     border-left: solid 1px @border-color;
     padding-left: 1.5rem;
@@ -31,11 +31,11 @@
     line-height: 1.75;
   }
 
-  #content{
+  .content{
     clear: both;
   }
 
-  #content header{
+  .content header{
     width: 60%;
     max-width: 54rem;
     margin: 0 0 0 3rem;
@@ -73,7 +73,7 @@
     margin-bottom: 1em;
   }
 
-  #article-list-pagination{
+  .article-list-pagination{
     width: 60%;
     max-width: 54rem;
     margin: 0 0 0 3rem;
@@ -83,7 +83,7 @@
   }
 
 
-  #content article{
+  .content article{
     width: 60%;
     max-width: 54rem;
     margin: 0 0 0 3rem;
@@ -92,7 +92,7 @@
 
   article h3{
     margin-top: 1.8em;
-    margin-bottom: 0.6em;   
+    margin-bottom: 0.6em;
   }
 
   article h4{
@@ -144,7 +144,7 @@
 
 
 
-  #article-pagination{
+  .article-pagination{
     width: 60%;
     max-width: 54rem;
     margin: 0 0 0 3rem;
@@ -153,49 +153,49 @@
     font-size: 0.75em;
   }
 
-  #article-pagination a{
+  .article-pagination a{
     position: absolute;
     top: 50%;
   }
 
-  #article-pagination .prev{
+  .article-pagination .prev{
     left: 0;
   }
 
-  #article-pagination .next{
+  .article-pagination .next{
     right: 0;
-  } 
+  }
 
-  #page-footer{
+  .page-footer{
     padding: 0.65rem 0 0;
     border-top: 0.1rem dotted @border-color;
     margin: 7.5rem 0 3rem;
   }
 
 
-  #page-footer section{
+  .page-footer section{
     width: 60%;
     max-width: 54rem;
     margin: 0 0 0 3rem;
-    
+
     font-size: 0.75em;
 
     overflow: auto;
   }
 
-  #footer-menu ul{
+  .footer-menu ul{
     list-style-type: none;
     float: left;
   }
 
-  #footer-menu ul li{
+  .footer-menu ul li{
     display: block;
     float: left;
     margin-right: 1rem;
   }
 
 
-/* 
+/*
 
 
   |Media Queries
@@ -204,17 +204,17 @@
 
   @media only screen and (max-width: 560px) {
 
-    #masthead {
+    .masthead {
       width: 90%;
       margin: 3em auto 0;
     }
 
-    #site-slogan {
+    .site-slogan {
       display: none;
     }
 
-    #content{ 
-      article, 
+    .content{
+      article,
       header {
         width: 90%;
         margin: 0 auto;
@@ -228,8 +228,8 @@
       line-height: 1.8;
     }
 
-    #article-list-pagination, 
-    #article-pagination {
+    .article-list-pagination,
+    .article-pagination {
       width: 90%;
       margin: 0 auto;
       overflow: auto;
@@ -242,11 +242,11 @@
       }
     }
 
-    #page-footer {
+    .page-footer {
       margin-top: 4.5rem;
     }
 
-    #page-footer section {
+    .page-footer section {
       width: 90%;
       font-size: 0.75rem;
       margin: 0 auto;
@@ -256,28 +256,28 @@
 
   @media only screen and (min-width: 561px) and (max-width: 1080px) {
 
-    #masthead{
+    .masthead{
       width: 90%;
       margin: 3em auto 0;
-    }    
+    }
 
-    #content{ 
-      article, 
+    .content{
+      article,
       header {
         width: 90%;
         margin: 0 auto;
       }
     }
 
-    #article-list-pagination,
-    #article-pagination {
+    .article-list-pagination,
+    .article-pagination {
       width: 90%;
       margin: 0 auto;
     }
 
-    #page-footer section{
+    .page-footer section{
       width: 90%;
       margin: 0 auto;
-    }        
+    }
 
   }
