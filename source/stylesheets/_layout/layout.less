@@ -5,8 +5,18 @@
 
 */
 
+  body{
+    border-top: 4px solid @accent;
+  }
+
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
   .page-header{
     margin-bottom: 4.5em;
+    .wrapper();
   }
 
   .masthead{
@@ -32,6 +42,7 @@
   }
 
   .content{
+    .wrapper();
     clear: both;
   }
 
@@ -40,46 +51,6 @@
     max-width: 54rem;
     margin: 0 0 0 3rem;
     position: relative;
-  }
-
-  .article-list li{
-    list-style-type: none;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
-  }
-
-  .article-list {
-
-    h2, h3{
-      font-size: 1em;
-    }
-
-  }
-
-  article .meta, .article-list .meta{
-    margin-bottom: 2.25rem;
-    margin-top: -1.5rem;
-
-		font-size: 0.75em;
-		color: #777;
-  }
-
-  .article-list .meta{
-    margin-top: -0.75em;
-  }
-
-  article h2, .article-list h2{
-    margin-top: 2em;
-    margin-bottom: 1em;
-  }
-
-  .article-list-pagination{
-    width: 60%;
-    max-width: 54rem;
-    margin: 0 0 0 3rem;
-    position: relative;
-
-    font-size: 0.75em;
   }
 
 
@@ -141,35 +112,12 @@
     background: @code-background;
   }
 
-
-
-
-  .article-pagination{
-    width: 60%;
-    max-width: 54rem;
-    margin: 0 0 0 3rem;
-    position: relative;
-
-    font-size: 0.75em;
-  }
-
-  .article-pagination a{
-    position: absolute;
-    top: 50%;
-  }
-
-  .article-pagination .prev{
-    left: 0;
-  }
-
-  .article-pagination .next{
-    right: 0;
-  }
-
   .page-footer{
+    .wrapper();
     padding: 0.65rem 0 0;
     border-top: 0.1rem dotted @border-color;
-    margin: 7.5rem 0 3rem;
+    margin-top: 7.5rem;
+    margin-bottom: 3rem;
   }
 
 
@@ -221,27 +169,6 @@
       }
     }
 
-    article .meta {
-      margin-top: -2.7em;
-      margin-bottom: 1.8em;
-      font-size: 0.625em;
-      line-height: 1.8;
-    }
-
-    .article-list-pagination,
-    .article-pagination {
-      width: 90%;
-      margin: 0 auto;
-      overflow: auto;
-
-      a {
-        position: relative;
-        display: block;
-        float: left;
-        clear: both;
-      }
-    }
-
     .page-footer {
       margin-top: 4.5rem;
     }
@@ -267,12 +194,6 @@
         width: 90%;
         margin: 0 auto;
       }
-    }
-
-    .article-list-pagination,
-    .article-pagination {
-      width: 90%;
-      margin: 0 auto;
     }
 
     .page-footer section{
