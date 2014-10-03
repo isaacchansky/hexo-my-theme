@@ -6,13 +6,14 @@ prepend window_title
 
 append content
   article(class=page.layout)
-    h2= page.title
-    div.meta
-      include _partial/article_meta
+    .post-title
+      h2= page.title
+      div.meta
+        include _partial/article_meta
 
-      +date(page.date)
+        +date(page.date)
 
-      +category(page.categories)
+        +category(page.categories)
 
     != page.content
 

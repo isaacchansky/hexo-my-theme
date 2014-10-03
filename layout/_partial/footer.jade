@@ -1,11 +1,3 @@
 section
   nav.footer-menu
-    ul
-    - site.pages.each(function(page){
-      li
-        a(href= url_for(page.path) )= titlecase(page.title)
-    - })
-      li
-        a(href=config.root + 'archives') Archive
-      li
-        a(href=theme.rss ? theme.rss : config.root + 'atom.xml') Feed
+    include nav

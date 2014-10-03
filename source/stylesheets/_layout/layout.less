@@ -5,6 +5,13 @@
 
 */
 
+  ::selection {
+    background: #ffb7b7; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #ffb7b7; /* Gecko Browsers */
+  }
+
   body{
     border-top: 4px solid @accent;
   }
@@ -34,6 +41,7 @@
 
   .site-slogan{
     font-size: 0.75em;
+    color: @basic-gray;
     border-left: solid 1px @border-color;
     padding-left: 1.5rem;
     margin-top: 0.85em;
@@ -55,9 +63,9 @@
 
 
   .content article{
-    width: 60%;
+    width: 80%;
     max-width: 54rem;
-    margin: 0 0 0 3rem;
+    margin: 0 auto 3rem;
     position: relative;
   }
 
@@ -112,11 +120,19 @@
     background: @code-background;
   }
 
+  .stay-put-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: @body-background;
+  }
+
   .page-footer{
     .wrapper();
     padding: 0.65rem 0 0;
     border-top: 0.1rem dotted @border-color;
-    margin-top: 7.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 3rem;
   }
 
@@ -124,22 +140,19 @@
   .page-footer section{
     width: 60%;
     max-width: 54rem;
-    margin: 0 0 0 3rem;
-
-    font-size: 0.75em;
-
+    margin: 0 0 0 2rem;
     overflow: auto;
   }
 
-  .footer-menu ul{
+  ul.site-nav{
     list-style-type: none;
     float: left;
   }
 
-  .footer-menu ul li{
-    display: block;
+  ul.site-nav li{
+    display: inline-block;
     float: left;
-    margin-right: 1rem;
+    padding: 0 1rem 0 1rem;
   }
 
 
@@ -169,14 +182,26 @@
       }
     }
 
-    .page-footer {
-      margin-top: 4.5rem;
-    }
 
     .page-footer section {
       width: 90%;
       font-size: 0.75rem;
       margin: 0 auto;
+    }
+
+    .page-footer{
+      margin-bottom: 0.5em;
+    }
+
+    ul.site-nav{
+      margin-bottom: 0;
+    }
+
+    ul.site-nav li{
+      width: 50%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      text-align: center;
     }
 
   }
