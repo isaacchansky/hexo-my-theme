@@ -52,6 +52,7 @@
   .content{
     .wrapper();
     clear: both;
+    min-height: 20rem;
   }
 
   .content header{
@@ -120,19 +121,11 @@
     background: @code-background;
   }
 
-  .stay-put-bottom{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: @body-background;
-  }
-
   .page-footer{
     .wrapper();
     padding: 0.65rem 0 0;
     border-top: 0.1rem dotted @border-color;
-    margin-top: 1.5rem;
+    margin-top: 6rem;
     margin-bottom: 3rem;
   }
 
@@ -144,15 +137,19 @@
     overflow: auto;
   }
 
+  .header-nav{
+    text-align: right;
+  }
+
   ul.site-nav{
     list-style-type: none;
-    float: left;
+    font-size: 1rem;
+    width: 100%;
   }
 
   ul.site-nav li{
     display: inline-block;
-    float: left;
-    padding: 0 1rem 0 1rem;
+    padding: 0.5rem 1rem 0 1rem;
   }
 
 
